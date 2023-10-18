@@ -57,7 +57,7 @@ def predict(W):
     Y_hat[Y_hat>0.5] = 1
     
     idx = np.expand_dims(np.arange(1,201), axis=1)
-    np.savetxt("predict.csv", np.concatenate([idx, Y_hat], axis=1), header = "Index,ID", comments='', delimiter=',')
+    np.savetxt("predict_xzc.csv", np.concatenate([idx, Y_hat], axis=1), header = "Index,ID", comments='', delimiter=',')
     
 iterations = ###### Training loops
 lr = ###### Learning rate
